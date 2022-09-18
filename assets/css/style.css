@@ -665,6 +665,14 @@ input[type="radio"]:checked + label:after {
     height: 100vh;
 }
 
+@media all and (max-width: 600px) {
+    .window {
+        -ms-flex-align: start;
+        align-items: flex-start;
+        padding-top: 14px;
+    }
+}
+
 .window__images {
     max-width: 108px;
     width: 100%;
