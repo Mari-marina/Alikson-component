@@ -669,7 +669,7 @@ input[type="radio"]:checked + label:after {
     .window {
         -ms-flex-align: start;
         align-items: flex-start;
-        padding-top: 14px;
+        padding: 14px 0;
     }
 }
 
@@ -997,6 +997,14 @@ input[type="radio"]:checked + label:after {
     height: 100vh;
     -ms-flex-pack: center;
     justify-content: center;
+}
+
+@media all and (max-width: 600px) {
+    .pop-up {
+        -ms-flex-align: start;
+        align-items: flex-start;
+        padding: 14px 0;
+    }
 }
 
 .pop-up__wrapper {
