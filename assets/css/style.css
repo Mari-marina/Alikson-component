@@ -814,6 +814,7 @@ input[type="radio"]:checked + label:after {
     .window__wrap1 {
         border-bottom: solid 1px  #ECECEC;
         padding-bottom: 6px;
+        width: 268px;
     }
 }
 
