@@ -828,6 +828,7 @@ input[type="radio"]:checked + label:after {
 }
 
 .window__sum-price {
+    font-family: Montserrat-Bold;
     font-weight: 700;
 }
 
