@@ -804,7 +804,7 @@ input[type="radio"]:checked + label:after {
     line-height: 150%;
     color: #666666;
     font-family: "Montserrat-Bold";
-    margin-right: 26px;
+    margin-right: 14px;
 }
 
 .window__sum-price {
