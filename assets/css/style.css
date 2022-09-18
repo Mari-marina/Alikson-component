@@ -552,6 +552,13 @@ input[type="radio"]:checked + label:after {
     max-width: 146px;
     width: 100%;
     margin-left: 10px;
+    background: #7647D9;
+    border: none;
+    color: #ffffff;
+}
+
+.price__btn:hover {
+    background: #8258dc;
 }
 
 .price__from {
@@ -561,6 +568,16 @@ input[type="radio"]:checked + label:after {
     flex-direction: column;
     max-width: 305px;
     width: 100%;
+}
+
+.price__button:first-child {
+    background: #7647D9;
+    border: none;
+    color: #ffffff;
+}
+
+.price__button:first-child:hover {
+    background: #8258dc;
 }
 
 .price__tel, .price__button {
@@ -782,6 +799,7 @@ input[type="radio"]:checked + label:after {
 }
 
 .window__wrap1 {
+    width: 250px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
