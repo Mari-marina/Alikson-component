@@ -377,6 +377,7 @@ body {
 a {
     color: inherit;
     font-family: inherit;
+    cursor: pointer;
 }
 
 *,
@@ -655,13 +656,26 @@ input[type="radio"]:checked + label:after {
     border: 1px solid #7647D9 !important;
 }
 
+.window {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.45);
+    height: 100vh;
+}
+
 .window__images {
     max-width: 108px;
     width: 100%;
     margin-right: 16px;
+    margin-right: 6px;
 }
 
 .window__block {
+    max-width: 300px;
+    width: 100%;
+    margin-bottom: 20px;
     display: -ms-flexbox;
     display: flex;
     border: 1px solid #EEEEEE;
@@ -675,6 +689,12 @@ input[type="radio"]:checked + label:after {
         width: 100%;
         -ms-flex-pack: distribute;
         justify-content: space-around;
+    }
+}
+
+@media all and (max-width: 362px) {
+    .window__block {
+        max-width: 262px;
     }
 }
 
@@ -710,6 +730,12 @@ input[type="radio"]:checked + label:after {
     width: 100%;
 }
 
+@media all and (min-width: 830px) {
+    .window__content_bottom {
+        margin-left: 30px;
+    }
+}
+
 .window__price {
     margin-right: 8px;
     font-weight: 700;
@@ -725,7 +751,7 @@ input[type="radio"]:checked + label:after {
 .window__img {
     cursor: pointer;
     width: 16px;
-    margin-left: 184px;
+    margin-left: 170px;
 }
 
 @media all and (min-width: 830px) {
@@ -734,13 +760,28 @@ input[type="radio"]:checked + label:after {
     }
 }
 
-@media all and (max-width: 360px) {
+@media all and (max-width: 406px) {
     .window__img {
-        margin-left: 172px;
+        margin-left: 120px;
     }
 }
 
+.window__wrap-block {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+}
+
 .window__wrap {
+    background: #ffffff;
+    margin: 0 auto;
     max-width: 344px;
     width: 100%;
     padding: 46px 24px;
@@ -755,6 +796,20 @@ input[type="radio"]:checked + label:after {
         -ms-flex-pack: justify;
         justify-content: space-between;
         max-width: 660px;
+    }
+}
+
+@media all and (max-width: 406px) {
+    .window__wrap {
+        max-width: 300px;
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 362px) {
+    .window__wrap {
+        max-width: 280px;
+        padding: 40px 10px;
     }
 }
 
@@ -781,21 +836,21 @@ input[type="radio"]:checked + label:after {
 
 .window__img-cross {
     position: absolute;
-    top: -46px;
-    right: -56px;
+    top: -37px;
+    right: 16px;
     cursor: pointer;
 }
 
 @media all and (min-width: 830px) {
     .window__img-cross {
-        right: -372px;
-        top: -42px;
+        right: -380px;
+        top: -31px;
     }
 }
 
-@media all and (max-width: 360px) {
+@media all and (max-width: 406px) {
     .window__img-cross {
-        right: -44px;
+        right: 13px;
     }
 }
 
@@ -815,6 +870,12 @@ input[type="radio"]:checked + label:after {
         border-bottom: solid 1px  #ECECEC;
         padding-bottom: 6px;
         width: 268px;
+    }
+}
+
+@media all and (max-width: 362px) {
+    .window__wrap1 {
+        width: 218px;
     }
 }
 
@@ -855,6 +916,12 @@ input[type="radio"]:checked + label:after {
     -ms-border-radius: 0;
     -o-border-radius: 0;
     width: 250px;
+}
+
+@media all and (max-width: 362px) {
+    .window__tel {
+        width: 200px;
+    }
 }
 
 .window__checkbox {
@@ -913,7 +980,20 @@ input[type="radio"]:checked + label:after {
     flex-direction: column;
 }
 
+.pop-up {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.45);
+    height: 100vh;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
 .pop-up__wrapper {
+    margin: 10px;
+    background: #ffffff;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -947,14 +1027,24 @@ input[type="radio"]:checked + label:after {
     }
 }
 
+.pop-up__link {
+    text-decoration: none;
+}
+
 .pop-up__cross {
-    margin: 6px 0 0 296px;
+    margin: 9px 0 0 296px;
     cursor: pointer;
 }
 
 @media all and (min-width: 830px) {
     .pop-up__cross {
         margin: 6px 0 0 418px;
+    }
+}
+
+@media all and (max-width: 364px) {
+    .pop-up__cross {
+        margin: 9px 0 0 254px;
     }
 }
 
