@@ -730,7 +730,7 @@ input[type="radio"]:checked + label:after {
 
 @media all and (min-width: 830px) {
     .window__img {
-        margin-left: 143px;
+        margin-left: 138px;
     }
 }
 
